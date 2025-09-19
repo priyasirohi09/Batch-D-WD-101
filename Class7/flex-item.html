@@ -9,7 +9,7 @@
     .container {
       background-color: blue;
       height: 600px;
-      width: 700px;
+      width: 300px;
       display: flex;
     }
 
@@ -21,15 +21,19 @@
     }
 
     .one {
-      order: 2;
+      /* order: 2; */
+      /* flex-grow: 1; */
+      flex-shrink: 2;
       background-color: red;
     }
     .two{
-      order: 7;
+      /* order: 7; */
+      flex-shrink: 3;
       background-color: green;
     }
     .three{
-      order: 7;
+      /* flex-grow: 1; */
+      /* order: 7; */
     }
   </style>
 </head>
@@ -40,6 +44,11 @@
     <div class="Box two">Box2</div>
     <div class="Box three">Box3</div>
     <div class="Box four">Box4</div>
+    <!-- <div class="Box four">Box4</div> -->
+    <!-- <div class="Box four">Box4</div>
+    <div class="Box four">Box4</div>
+    <div class="Box four">Box4</div>
+    <div class="Box four">Box4</div> -->
     <div></div>
   </div>
 </body>
