@@ -6,11 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .box {
+    html{
+      font-size: 10px;
+    }
+    .box-pixel {
       background-color: red;
       height: 400px;
       width: 800px;
 
+    }
+    .box-viewport{
+      background-color: pink;
+      height: 60vh; /*60% of the visible screen height */
+      width: 20vw; /* 20% of visible screen width */
     }
 
     .parent {
@@ -19,21 +27,29 @@
       margin: 40px;
       background-color: orange;
     }
+    .box-rem{
+      height: 20rem; /* 20*16 = 320px */
+      width: 40rem; /* 40*16 = 640px */
+      background-color: peachpuff;
+
+    }
 
     .child {
-      height: 40%;
-      width: 50%;
-      margin: 20%;
+      height: 40%; /* 40% * 800 = 320 */
+      width: 50%; /*50% * 1200 = 600 */
+      margin: 20%; /*20% * 1200 = 240 */
       background-color: blue;
     }
   </style>
 </head>
 
 <body>
-  <!-- <div class="box"></div> -->
+  <div class="box-pixel"></div>
   <div class="parent">
     <div class="child"></div>
   </div>
+  <div class="box-viewport"></div>
+  <div class="box-rem"></div>
 </body>
 
 </html>
