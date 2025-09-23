@@ -13,22 +13,30 @@
       display: grid;
       margin: auto;
       /* grid-template-columns: 200px 200px 200px 200px 200px; */
-      grid-template-columns: 1fr 2fr 4fr;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
       /* column-gap: 10px;
       row-gap: 20px; */
-      /* gap: 20px 90px; */
+      gap: 20px;
     }
     .box{
       background-color: orange;
       border: 1px solid red;
       /* margin: 30px; */
-      /* height: 80px;
-      width: 80px; */
+      height: 100px;
+      width: 100px;
+      /* align-self: center;
+      justify-self: center; */
     }
     .box:nth-of-type(5){
       background-color: red;
       height: 80px;
       width: 190px;
+      /* margin: auto; */
+      
     }
 
     .box:nth-of-type(12){
@@ -49,12 +57,12 @@
     <div class="box">7</div>
     <div class="box">8</div>
     <div class="box">9</div>
-    <div class="box">10</div>
+    <!-- <div class="box">10</div>
     <div class="box">11</div>
     <div class="box">12</div>
     <div class="box">13</div>
     <div class="box">14</div>
-    <div class="box">15</div>
+    <div class="box">15</div> -->
   </div>
 </body>
 </html>
