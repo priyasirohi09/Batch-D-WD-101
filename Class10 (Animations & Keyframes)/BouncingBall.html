@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .parent{
+    .parent {
       height: 800px;
-      border: 1px solid red;
+      /* width: 500px; */
+      /* border: 1px solid red; */
     }
-    .ball{
+
+    .ball {
       background-color: red;
       height: 100px;
       width: 100px;
@@ -18,22 +21,39 @@
       position: absolute;
       left: 600px;
       bottom: 120px;
+      animation-name: bounce;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
     }
-    .line{
+
+    .line {
       border: 2px solid black;
       height: 10px;
       width: 800px;
       position: absolute;
       bottom: 100px;
-      left: 200px
+      left: 200px;
     }
-    @keyframe 
+
+    @keyframes bounce {
+      from {
+        bottom: 120px;
+      }
+
+      to {
+        bottom: 270px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="parent">
-  <div class="ball"></div>
-  <div class="line"></div>
+    <div class="ball"></div>
+    <div class="line"></div>
   </div>
 </body>
+
 </html>
