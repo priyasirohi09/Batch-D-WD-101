@@ -1,11 +1,11 @@
 function chooseFavColor(color){
-  switch(color){
+  let colorLower = color.toLowerCase(); 
+  switch(colorLower){
     case 'red':
       console.log(`apple is ${color}`)
       break; 
     case 'green':
       console.log(`grass is ${color}`)
-      break;
     case 'blue':
       console.log(`sky is ${color}`)
       break;
@@ -17,5 +17,7 @@ function chooseFavColor(color){
   }
 }
 
-chooseFavColor('red')
-chooseFavColor('blue')
+chooseFavColor('Green')
+// chooseFavColor('blue')
+// chooseFavColor('Yellow') 
+// chooseFavColor('YELLOW') 
