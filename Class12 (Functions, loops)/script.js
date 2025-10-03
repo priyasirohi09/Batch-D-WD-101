@@ -1,3 +1,9 @@
+let i = 1;
+while(i <= 10){
+  console.log(`5 * ${i} = ${5*i}`)
+  i++
+}
+/*
 function greeting(username){
   // console.log('Good Afternoon, ' + username)
   console.log(`Good Afternoon, ${username}`)
@@ -31,3 +37,4 @@ let prd = function(n1, n2){
 }
 console.log(prd(10, 20)) // 200
 console.log(prd(6, 80)) // 480
+*/
