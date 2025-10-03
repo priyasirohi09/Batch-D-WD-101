@@ -22,3 +22,12 @@ function prdOfTwo(n1, n2){
   return n1*n2
 }
 console.log(prdOfTwo(4, 25))
+
+
+// function as expression
+
+let prd = function(n1, n2){
+  return n1*n2
+}
+console.log(prd(10, 20)) // 200
+console.log(prd(6, 80)) // 480
