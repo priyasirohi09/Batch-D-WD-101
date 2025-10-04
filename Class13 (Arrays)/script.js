@@ -33,3 +33,14 @@ let join2 = arr3.join(' ')
 console.log(join2) //o l l e h
 let join3 = arr3.join('')
 console.log(join3) // olleh
+
+
+function reverseString(str){
+  // return str.split('').reverse().join('')
+  let arr = str.split('')
+  arr.reverse();
+  return arr.join('')
+}
+console.log(reverseString('apple')) //elppa
+
+
