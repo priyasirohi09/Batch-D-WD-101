@@ -14,3 +14,22 @@ console.log(merged); // [10, 30, 60, 80, 'the', 'is', 'or', 'no', 'yes']
 
 let merged2 = words.concat(numbers);
 console.log(merged2); //  ['the', 'is', 'or', 'no', 'yes', 10, 30, 60, 80]
+
+// split()
+let str = 'hello world, good afternoon'
+let arr2 = str.split('o')
+console.log(arr2)//['hell', ' w', 'rld, g', '', 'd aftern', '', 'n'
+
+let str2 = 'hello'
+let arr3 = str2.split('')
+console.log(arr3) // ['h', 'e', 'l', 'l', 'o']
+
+arr3.reverse();
+console.log(arr3) // ['o', 'l', 'l', 'e', 'h']
+
+let join1 = arr3.join()
+console.log(join1) //o,l,l,e,h
+let join2 = arr3.join(' ')
+console.log(join2) //o l l e h
+let join3 = arr3.join('')
+console.log(join3) // olleh
