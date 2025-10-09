@@ -20,3 +20,8 @@ console.log(employee)
 // delete property 
 delete employee.isPresent
 console.log(employee)
+
+
+let propName = 'name'
+console.log(employee.propName) // undefined
+console.log(employee[propName]) // Sanidhya
