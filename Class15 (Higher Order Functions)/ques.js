@@ -8,7 +8,7 @@ Radii: [2, 4, 6, 8]
 Areas: [12.566, 50.265, 113.097, 201.062]
 Circumferences: [12.566, 25.132, 37.699, 50.265]
 Diameters: [4, 8, 12, 16]
-*/
+
 function calculateArea(arr){
   let ans = []
   for(let i = 0; i < arr.length; i++){
@@ -42,3 +42,34 @@ let diaArr = calculateDiameter(radius)
 console.log(areaArr)
 console.log(circumArr)
 console.log(diaArr)
+*/ 
+
+// Usinng Higher Order Function 
+
+
+function circleDetails(arr, cb){
+  let ans = []
+  for(let i = 0; i < arr.length; i++){
+    let cal = cb(arr[i])
+    ans.push(cal)
+  }
+  return ans
+}
+function circleArea(r){
+  return 3.14*r*r
+}
+function circleCircumference(r){
+  return 2*3.14*r
+}
+function circleDia(r){
+  return 2*r
+}
+let radius = [2, 4, 6, 8] 
+let area = circleDetails(radius, circleArea)
+let circum = circleDetails(radius, circleCircumference)
+let dia = circleDetails(radius, circleDia)
+
+console.log(area)
+console.log(circum)
+console.log(dia)
+
